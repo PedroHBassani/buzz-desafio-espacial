@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfn7wjfay5wn3"]
+
+[ext_resource type="Texture2D" uid="uid://cjqir7t7r6j8e" path="res://assets/background.jpg" id="1_bkp1e"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(150, 100)
+autoscroll = Vector2(0, 35)
+repeat_times = 460
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("1_bkp1e")

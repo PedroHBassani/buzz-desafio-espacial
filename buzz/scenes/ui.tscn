@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://monxk6stmcrd"]
+
+[ext_resource type="Script" uid="uid://dtcqrhsl0nsxd" path="res://scripts/ui.gd" id="1_x4jx1"]
+[ext_resource type="Texture2D" uid="uid://dvoq2uvismmlq" path="res://assets/heart.png" id="2_yev5y"]
+
+[node name="UI" type="CanvasLayer"]
+scale = Vector2(0.2, 0.2)
+transform = Transform2D(0.2, 0, 0, 0.2, 0, 0)
+script = ExtResource("1_x4jx1")
+
+[node name="Corações" type="HBoxContainer" parent="."]
+offset_left = 35.0
+offset_top = 40.0
+offset_right = 805.0
+offset_bottom = 294.0
+
+[node name="heart1" type="TextureRect" parent="Corações"]
+layout_mode = 2
+texture = ExtResource("2_yev5y")
+
+[node name="heart2" type="TextureRect" parent="Corações"]
+layout_mode = 2
+texture = ExtResource("2_yev5y")
+
+[node name="heart3" type="TextureRect" parent="Corações"]
+layout_mode = 2
+texture = ExtResource("2_yev5y")
